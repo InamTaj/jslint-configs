@@ -3,11 +3,11 @@
 THE _best_ lint configurations for JS, React, Node and Jest!
 
 Stop relying on humans to write consistent and good quality JavaScript.
-Use [jslint-configs](#jslint-configs) to ensure your code is clean from common mistakes of JavaScript/React/Node and while doing that, give your developer-productivity an unfair boost!
+Use [jslint-configs](https://github.com/InamTaj/jslint-configs) to ensure your code is clean from common mistakes of JavaScript/React/Node and while doing that, give your developer-productivity an unfair boost!
 
 ## ⭐️ Features
 
-[jslint-configs](#jslint-configs) support linting for the following technologies:
+[jslint-configs](https://github.com/InamTaj/jslint-configs) support linting for the following technologies:
 
 - JavaScript and ES6
 - Node.js
@@ -16,15 +16,15 @@ Use [jslint-configs](#jslint-configs) to ensure your code is clean from common m
 :bulb: For quickly increasing developer's knowledge it also has respective hyperlink for each lint rule as follows:
 
 ```javascript
-'arrow-parens': [2,              // https://eslint.org/docs/rules/arrow-parens
+'arrow-parens': [2,   // https://eslint.org/docs/rules/arrow-parens
   'as-needed',
 ],
 ```
 
 ## 💿 Installation
 
-- For Yarn: `yarn add --dev lint-configs`
-- For NPM: `npm install --save-dev lint-configs`
+- For Yarn: `yarn add --dev jslint-configs`
+- For NPM: `npm install --save-dev jslint-configs`
 
 ## 📖 About Lint Setup
 
@@ -49,7 +49,7 @@ If you want to lint only vanilla JavaScript, extend your project's `.eslintrc.js
 
 ```javascript
 module.exports = {
-  extends: "@inam/lint-configs/index.js"
+  extends: "jslint-configs/index.js"
 };
 ```
 
@@ -59,7 +59,7 @@ If you want to lint JavaScript + React.JS code, extend your project's `.eslintrc
 
 ```javascript
 module.exports = {
-  extends: "@inam/lint-configs/config-react.js"
+  extends: "jslint-configs/config-react.js"
 };
 ```
 
@@ -69,7 +69,7 @@ If you want to lint JavaScript + Node.JS, extend your project's `.eslintrc.js` f
 
 ```javascript
 module.exports = {
-  extends: "@inam/lint-configs/config-node.js"
+  extends: "jslint-configs/config-node.js"
 };
 ```
 

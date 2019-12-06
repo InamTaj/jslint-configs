@@ -1,20 +1,23 @@
 {
-  "name": "@inam/lint-configs",
+  "name": "jslint-configs",
   "version": "1.0.0",
   "description": "The best linting configurations for JS, React, Node and Jest",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/InamTaj/jslint-configs"
+    "url": "ssh+https://github.com/InamTaj/jslint-configs.git"
   },
-  "author": "Inam Taj",
-  "license": "UNLICENSED",
-  "private": true,
+  "homepage": "https://github.com/InamTaj/jslint-configs",
+  "author": {
+    "name": "Inam Taj",
+    "email": "inamullahtaj@gmail.com",
+    "url": "https://github.com/InamTaj/"
+  },
   "scripts": {
     "lint": "eslint . --config config-base.js",
     "lint-staged": "lint-staged",
     "format:markdown": "prettier --parser markdown --write ./*.md",
-    "prepublish": "yarn run-staged"
+    "prepublish": "yarn lint-staged"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
@@ -28,6 +31,9 @@
     "eslint-plugin-jest": "^23.1.1",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-react": "^7.17.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=5.16.0"
   },
   "husky": {
     "hooks": {
@@ -47,5 +53,9 @@
   "engines": {
     "node": ">=8",
     "npm": ">=6"
-  }
+  },
+  "license": "MIT",
+  "keywords": ["linting", "eslint", "react", "node", "jest"],
+  "private": false,
+  "bugs": "https://github.com/InamTaj/jslint-configs/issues"
 }
