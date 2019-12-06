@@ -1,7 +1,7 @@
 {
   "name": "@inam/lint-configs",
   "version": "1.0.0",
-  "description": "Best Linting configurations for JS, React, Node and Jest",
+  "description": "The best linting configurations for JS, React, Node and Jest",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -13,7 +13,8 @@
   "scripts": {
     "lint": "eslint . --config config-base.js",
     "lint-staged": "lint-staged",
-    "format:markdown": "prettier --parser markdown --write ./*.md"
+    "format:markdown": "prettier --parser markdown --write ./*.md",
+    "prepublish": "yarn run-staged"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
@@ -44,7 +45,7 @@
     ]
   },
   "engines": {
-    "node": ">=10",
+    "node": ">=8",
     "npm": ">=6"
   }
 }
