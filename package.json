@@ -1,0 +1,50 @@
+{
+  "name": "@inam/lint-configs",
+  "version": "1.0.0",
+  "description": "Best Linting configurations for JS, React, Node and Jest",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/InamTaj/jslint-configs"
+  },
+  "author": "Inam Taj",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "lint": "eslint . --config config-base.js",
+    "lint-staged": "lint-staged",
+    "format:markdown": "prettier --parser markdown --write ./*.md"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^23.1.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-react": "^7.17.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "yarn lint --fix",
+      "git add"
+    ],
+    "*.md": [
+      "yarn format:markdown",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  }
+}
