@@ -1,0 +1,14 @@
+# OS X
+.DS_Store
+
+# IDEs
+.idea
+.vscode
+
+# NPM
+node_modules
+package-lock.json
+
+# Build artifacts
+.cache
+build
