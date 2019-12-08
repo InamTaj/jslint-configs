@@ -6,7 +6,7 @@ module.exports = {
     'import',
     'react',
     'jest',
-    'plugin:node/recommended',
+    'node',
   ],
   'env': {
     'node': true,
