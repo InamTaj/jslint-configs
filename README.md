@@ -11,7 +11,7 @@ Use [jslint-configs](https://github.com/InamTaj/jslint-configs) to ensure your c
 
 - JavaScript and ES6
 - Node.js
-- React.js
+- React.js (with latest [React Hooks](https://reactjs.org/docs/hooks-intro.html))
 
 :bulb: For quickly increasing developer's knowledge it also has respective hyperlink for each lint rule as follows:
 
@@ -49,7 +49,7 @@ If you want to lint only vanilla JavaScript, extend your project's `.eslintrc.js
 
 ```javascript
 module.exports = {
-  extends: "jslint-configs/index.js"
+  extends: "./node_modules/jslint-configs/index.js"
 };
 ```
 
@@ -59,7 +59,7 @@ If you want to lint JavaScript + React.JS code, extend your project's `.eslintrc
 
 ```javascript
 module.exports = {
-  extends: "jslint-configs/config-react.js"
+  extends: "./node_modules/jslint-configs/config-react.js"
 };
 ```
 
@@ -69,7 +69,7 @@ If you want to lint JavaScript + Node.JS, extend your project's `.eslintrc.js` f
 
 ```javascript
 module.exports = {
-  extends: "jslint-configs/config-node.js"
+  extends: "./node_modules/jslint-configs/config-node.js"
 };
 ```
 

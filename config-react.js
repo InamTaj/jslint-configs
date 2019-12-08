@@ -4,6 +4,7 @@ module.exports = {
     'import',
     'react',
     'jest',
+    'react-hooks',
   ],
   'env': {
     'browser': true,
@@ -71,5 +72,8 @@ module.exports = {
       'allowFunctions': false,
       'allowBind': true,
     } ],
+    // https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
+    'react-hooks/rules-of-hooks': 2,
+    'react-hooks/exhaustive-deps': 2,
   },
 };
