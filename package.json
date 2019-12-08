@@ -1,6 +1,6 @@
 {
   "name": "jslint-configs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "The best linting configurations for JS, React, Node and Jest",
   "main": "index.js",
   "repository": {
