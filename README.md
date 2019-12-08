@@ -1,5 +1,12 @@
 # jslint-configs
 
+![npm](https://img.shields.io/npm/dw/jslint-configs)
+![GitHub issues](https://img.shields.io/github/issues-raw/inamtaj/jslint-configs)
+![node](https://img.shields.io/node/v/jslint-configs)
+![npm peer dependency version](https://img.shields.io/npm/dependency-version/jslint-configs/peer/eslint)
+![npm](https://img.shields.io/npm/v/jslint-configs)
+![GitHub](https://img.shields.io/github/license/inamtaj/jslint-configs)
+
 THE _best_ lint configurations for JS, React, Node and Jest!
 
 Stop relying on humans to write consistent and good quality JavaScript.
