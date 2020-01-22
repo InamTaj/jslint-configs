@@ -1,15 +1,21 @@
 module.exports = {
-  'extends': './config-base.js',
-  'plugins': [
+  extends: './config-base.js',
+  plugins: [
     'import',
     'react',
     'jest',
     'react-hooks',
   ],
-  'env': {
-    'browser': true,
-    'es6': true,
+  env: {
+    browser: true,
+    es6: true,
     'jest/globals': true,
+  },
+  parserOptions: {
+    ecmaVersion: 6,
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   settings: {
     'import/resolver': {
@@ -18,7 +24,7 @@ module.exports = {
           'node_modules',
           'src',
         ],
-        'extensions': [
+        extensions: [
           '.js',
           '.jsx',
           '.ts',
@@ -30,7 +36,7 @@ module.exports = {
       },
     },
   },
-  'rules': {
+  rules: {
     // React
     'jsx-quotes': [2, 'prefer-single'],
     'react/display-name': 0,
@@ -38,8 +44,8 @@ module.exports = {
     'react/jsx-closing-bracket-location': 1,
     'react/jsx-first-prop-new-line': [2, 'multiline'],
     'react/jsx-max-props-per-line': [2, {
-      'maximum': 1,
-      'when': 'always',
+      maximum: 1,
+      when: 'always',
     } ],
     'react/jsx-no-undef': 2,
     'react/jsx-sort-prop-types': 0,
@@ -54,23 +60,23 @@ module.exports = {
     'react/prop-types': 2,
     'react/react-in-jsx-scope': 2,
     'react/self-closing-comp': ['error', {
-      'component': true,
-      'html': false,
+      component: true,
+      html: false,
     } ],
     'react/sort-comp': 2,
     'react/jsx-wrap-multilines': 2,
     'react/jsx-curly-spacing': [2, {
-      'when': 'always',
-      'children': true,
-      'spacing': {
-        'objectLiterals': 'never',
+      when: 'always',
+      children: true,
+      spacing: {
+        objectLiterals: 'never',
       },
     } ],
     'react/jsx-no-bind': [2, {
-      'ignoreRefs': false,
-      'allowArrowFunctions': true,
-      'allowFunctions': false,
-      'allowBind': true,
+      ignoreRefs: false,
+      allowArrowFunctions: true,
+      allowFunctions: false,
+      allowBind: true,
     } ],
     // https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
     'react-hooks/rules-of-hooks': 2,

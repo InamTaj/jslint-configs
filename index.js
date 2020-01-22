@@ -1,3 +1,3 @@
 module.exports = {
-  'extends': './config-base.js',
+  extends: './config-base.js',
 };
