@@ -1,6 +1,6 @@
 {
   "name": "jslint-configs",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "The best linting configurations for JS, React, Node and Jest",
   "main": "index.js",
   "repository": {
@@ -17,13 +17,20 @@
     "lint": "eslint --config config-node.js .",
     "lint-staged": "lint-staged",
     "format:markdown": "prettier --parser markdown --write ./*.md",
-    "prepublish": "yarn lint-staged"
+    "clean": "rimraf dist",
+    "prebuild": "yarn clean",
+    "build": "mkdir dist; cp config*.js dist; cp index.js dist; cp package.json dist; cp README.md dist;",
+    "preminify": "yarn build",
+    "minify": "find dist -iname \"*.js\" -exec yarn uglifyjs {} --compress -o {} \\;",
+    "prepublish": "yarn lint-staged && yarn minify"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "uglify-js": "^3.7.6"
   },
   "dependencies": {
     "babel-eslint": "^10.0.3",

@@ -12,3 +12,4 @@ package-lock.json
 # Build artifacts
 .cache
 build
+dist

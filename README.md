@@ -28,6 +28,11 @@ Use [jslint-configs](https://github.com/InamTaj/jslint-configs) to ensure your c
 ],
 ```
 
+### ⭐️ Bonus Features ⭐
+
+- Well documented
+- Extremely small bundle size: `7~9 KB`
+
 ## 💿 Installation
 
 - For Yarn: `yarn add --dev jslint-configs`
