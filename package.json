@@ -1,6 +1,6 @@
 {
   "name": "jslint-configs",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "The best linting configurations for JS, React, Node and Jest",
   "main": "index.js",
   "repository": {
@@ -25,20 +25,20 @@
     "prepublish": "yarn lint-staged && yarn minify"
   },
   "devDependencies": {
-    "eslint": "^6.7.2",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.5.0",
-    "prettier": "^1.19.1",
-    "rimraf": "^3.0.0",
-    "uglify-js": "^3.7.6"
+    "eslint": "^7.9.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1",
+    "rimraf": "^3.0.2",
+    "uglify-js": "^3.10.4"
   },
   "dependencies": {
-    "babel-eslint": "^10.0.3",
+    "babel-eslint": "^10.1.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^23.1.1",
-    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-jest": "^24.0.1",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.17.0",
-    "eslint-plugin-react-hooks": "^2.3.0"
+    "eslint-plugin-react-hooks": "^4.1.2"
   },
   "peerDependencies": {
     "eslint": ">=6"
@@ -50,12 +50,10 @@
   },
   "lint-staged": {
     "*.{js,jsx}": [
-      "yarn lint --fix",
-      "git add"
+      "yarn lint --fix"
     ],
     "*.md": [
-      "yarn format:markdown",
-      "git add"
+      "yarn format:markdown"
     ]
   },
   "engines": {
