@@ -7,7 +7,7 @@
 ![npm](https://img.shields.io/npm/v/jslint-configs)
 ![GitHub](https://img.shields.io/github/license/inamtaj/jslint-configs)
 
-THE _best_ lint configurations for JS, React, Node and Jest!
+THE _best_ lint configurations for JS, React, Node, Jest and even React Native!
 
 Stop relying on humans to write consistent and good quality JavaScript.
 Use [jslint-configs](https://github.com/InamTaj/jslint-configs) to ensure your code is clean from common mistakes of JavaScript/React/Node and while doing that, give your developer-productivity an unfair boost!
@@ -19,6 +19,7 @@ Use [jslint-configs](https://github.com/InamTaj/jslint-configs) to ensure your c
 - JavaScript and ES6
 - Node.js
 - React.js (with latest [React Hooks](https://reactjs.org/docs/hooks-intro.html))
+- React Native
 
 :bulb: For quickly increasing developer's knowledge it also has respective hyperlink for each lint rule as follows:
 
@@ -35,6 +36,8 @@ Use [jslint-configs](https://github.com/InamTaj/jslint-configs) to ensure your c
 
 ## 💿 Installation
 
+> Please ensure that `eslint` is already installed in your project
+
 - For Yarn: `yarn add --dev jslint-configs`
 - For NPM: `npm install --save-dev jslint-configs`
 
@@ -42,9 +45,10 @@ Use [jslint-configs](https://github.com/InamTaj/jslint-configs) to ensure your c
 
 The way this lint configuration is setup as follows:
 
-- Base Configuration (Parent configuration - includes all standard JS linting rules)
-- React Configuration (Inherits from Base Config - adds up all standard React.js and JSX linting rules)
-- Node Configuration (Inherits from Base Config - adds up all standard Node.js linting rules)
+- **Base Configuration** (Parent configuration - includes all standard JS linting rules)
+- **React Configuration** (Inherits from Base Config - adds up all standard React.js and JSX linting rules)
+- **React Native Configuration** (Inherits from React Config - adds up RN specific rules on top of React rules)
+- **Node Configuration** (Inherits from Base Config - adds up all standard Node.js linting rules)
 
 _Let the picture speak a thousand words!_
 
@@ -52,7 +56,7 @@ _Let the picture speak a thousand words!_
 
 ## 🔧 Usage
 
-- Install ESLint in your project
+- Install ESLint in your project (`yarn add --dev eslint`)
 - Create `.eslintrc.js` at the root of your project
 
 #### Vanilla JavaScript
@@ -61,7 +65,7 @@ If you want to lint only vanilla JavaScript, extend your project's `.eslintrc.js
 
 ```javascript
 module.exports = {
-  extends: "./node_modules/jslint-configs/index.js"
+  extends: "./node_modules/jslint-configs/index.js",
 };
 ```
 
@@ -71,7 +75,17 @@ If you want to lint JavaScript + React.JS code, extend your project's `.eslintrc
 
 ```javascript
 module.exports = {
-  extends: "./node_modules/jslint-configs/config-react.js"
+  extends: "./node_modules/jslint-configs/config-react.js",
+};
+```
+
+#### React Native Linting
+
+If you want to lint JavaScript + React Native code, extend your project's `.eslintrc.js` file from [config-react](./config-react.js) as follows:
+
+```javascript
+module.exports = {
+  extends: "./node_modules/jslint-configs/config-react-native.js",
 };
 ```
 
@@ -81,7 +95,7 @@ If you want to lint JavaScript + Node.JS, extend your project's `.eslintrc.js` f
 
 ```javascript
 module.exports = {
-  extends: "./node_modules/jslint-configs/config-node.js"
+  extends: "./node_modules/jslint-configs/config-node.js",
 };
 ```
 

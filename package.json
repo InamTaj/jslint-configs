@@ -1,7 +1,7 @@
 {
   "name": "jslint-configs",
-  "version": "2.0.1",
-  "description": "The best linting configurations for JS, React, Node and Jest",
+  "version": "3.0.0",
+  "description": "The best linting configurations for JS, React, React Native, Node and Jest",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
     "url": "https://github.com/InamTaj/"
   },
   "scripts": {
-    "lint": "eslint --config config-node.js .",
+    "lint": "eslint --config config-node.js *.js",
     "lint-staged": "lint-staged",
     "format:markdown": "prettier --parser markdown --write ./*.md",
     "clean": "rimraf dist",
@@ -38,7 +38,8 @@
     "eslint-plugin-jest": "^24.0.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.17.0",
-    "eslint-plugin-react-hooks": "^4.1.2"
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "eslint-plugin-react-native": "^3.10.0"
   },
   "peerDependencies": {
     "eslint": ">=6"

@@ -9,7 +9,6 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    'jest/globals': true,
   },
   parserOptions: {
     ecmaVersion: 6,
@@ -18,6 +17,10 @@ module.exports = {
     },
   },
   settings: {
+    react: {
+      version: 'detect',
+    },
+    // plugin specific settings are below
     'import/resolver': {
       node: {
         moduleDirectory: [
@@ -32,10 +35,19 @@ module.exports = {
         ],
       },
     },
-    react: {
-      version: 'detect',
-    },
   },
+  overrides: [
+    {
+      files: [
+        '*.{spec,test}.{js,ts,tsx}',
+        '**/__{mocks,tests}__/**/*.{js,ts,tsx}',
+      ],
+      env: {
+        jest: true,
+        'jest/globals': true,
+      },
+    },
+  ],
   rules: {
     // React
     'jsx-quotes': [2, 'prefer-single'],
