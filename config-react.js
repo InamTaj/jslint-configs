@@ -31,9 +31,9 @@ module.exports = {
           '.tsx',
         ],
       },
-      react: {
-        version: 'detect',
-      },
+    },
+    react: {
+      version: 'detect',
     },
   },
   rules: {
