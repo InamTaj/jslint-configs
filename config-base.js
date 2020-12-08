@@ -65,12 +65,14 @@ module.exports = {
      * Possible errors
      */
     'no-cond-assign': [2, 'always'], // http://eslint.org/docs/rules/no-cond-assign
+    'no-const-assign': 2,            // http://eslint.org/docs/rules/no-const-assign
     'no-console': 1,                 // http://eslint.org/docs/rules/no-console
     'no-debugger': 1,                // http://eslint.org/docs/rules/no-debugger
     'no-alert': 1,                   // http://eslint.org/docs/rules/no-alert
     'no-constant-condition': 1,      // http://eslint.org/docs/rules/no-constant-condition
     'no-dupe-keys': 2,               // http://eslint.org/docs/rules/no-dupe-keys
     'no-duplicate-case': 2,          // http://eslint.org/docs/rules/no-duplicate-case
+    'no-dupe-class-members': 2,      // http://eslint.org/docs/rules/no-dupe-class-members
     'no-empty': 2,                   // http://eslint.org/docs/rules/no-empty
     'no-ex-assign': 2,               // http://eslint.org/docs/rules/no-ex-assign
     'no-extra-boolean-cast': 0,      // http://eslint.org/docs/rules/no-extra-boolean-cast
@@ -84,6 +86,9 @@ module.exports = {
     'no-unreachable': 2,             // http://eslint.org/docs/rules/no-unreachable
     'use-isnan': 2,                  // http://eslint.org/docs/rules/use-isnan
     'block-scoped-var': 2,           // http://eslint.org/docs/rules/block-scoped-var
+    'no-regex-spaces': 2,            // http://eslint.org/docs/rules/no-regex-spaces
+    'valid-jsdoc': 1,                // http://eslint.org/docs/rules/valid-jsdoc
+    'valid-typeof': 2,               // http://eslint.org/docs/rules/valid-typeof
 
     /**
      * Best practices

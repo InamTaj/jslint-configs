@@ -2,7 +2,7 @@
   "name": "jslint-configs",
   "version": "3.0.0",
   "description": "The best linting configurations for JS, React, React Native, Node and Jest",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "ssh+https://github.com/InamTaj/jslint-configs.git"
