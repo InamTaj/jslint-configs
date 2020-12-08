@@ -22,7 +22,7 @@
     "build": "mkdir dist; cp config*.js dist; cp index.js dist; cp package.json dist; cp README.md dist;",
     "preminify": "yarn build",
     "minify": "find dist -iname \"*.js\" -exec yarn uglifyjs {} --compress -o {} \\;",
-    "prepublish": "yarn lint-staged && yarn minify"
+    "prepare": "yarn lint-staged && yarn minify"
   },
   "devDependencies": {
     "eslint": "^7.9.0",
